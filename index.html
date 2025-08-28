@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sen's personal corner of the web" />
+    <meta name="keywords" content="Sen, personal website, coding, blog" />
+    <meta name="author" content="Sen" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="application-name" content="Sen's Website" />
+
+    <meta property="og:title" content="Sen" />
+    <meta property="og:description"
+        content="one fo da gang :3 two fo da fame ^o^ three fo da name :DDD for to da grave @_@" />
+    <meta property="og:image" content="https://sen.wtf/img/teto.png" />
+    <meta property="og:url" content="https://sen.wtf" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sen" />
+    <meta name="twitter:description"
+        content="one fo da gang :3 two fo da fame ^o^ three fo da name :DDD for to da grave @_@" />
+    <meta name="twitter:image" content="https://sen.wtf/img/teto.png" />
+    <meta name="twitter:creator" content="@sen" />
+
+    <link rel="icon" href="/img/teto.png" type="image/png">
+    <title>Sen</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: "CarbonMono", monospace;
+            background: #f8f8f6;
+            color: #0b0b0b;
+            line-height: 1.45;
+            padding: 40px 20px;
+        }
+
+        .wrap {
+            max-width: 940px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 28px;
+        }
+
+        .brand {
+            font-size: 20px;
+        }
+
+        .brand .title {
+            font-weight: 700;
+        }
+
+        .brand .subtitle {
+            display: block;
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #333;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 14px 0 8px;
+        }
+
+        p.lead {
+            color: #222;
+            margin-bottom: 12px;
+        }
+
+        .about {
+            background: transparent;
+        }
+
+        .gallery-subsection {
+            margin-top: 20px;
+        }
+
+        .fav-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .fav-buttons a img {
+            width: 100%;
+            transition: transform 0.1s ease;
+            cursor: pointer;
+        }
+
+        .fav-buttons a img:hover {
+            transform: scale(1.05);
+        }
+
+        #contact a {
+            display: block;
+            font-size: 14px;
+            text-decoration: none;
+            color: #0b0b0b;
+            margin-bottom: 8px;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 34px;
+            font-size: 13px;
+            color: #555;
+            border-top: 1px dashed #e6e6e6;
+            padding-top: 16px;
+        }
+
+        .mono {
+            font-family: monospace;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 12px;
+            }
+
+            .brand .title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <span class="title">Sen</span>
+                <span class="subtitle" id="subtitle">...</span>
+            </div>
+            <nav>
+                <a href="#home">home</a>
+                <a href="#gallery">gallery</a>
+                <a href="#contact">contact</a>
+                <a href="#blog">blog</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="about">
+                <h1>hello there!!</h1>
+                <p class="lead">i'm a cat from the interwebs (netherlands) who made this website so people can get to
+                    know me without feeling like they're bothering me with a million questions!</p>
+
+                <p class="lead">i will write stuff here soon...</p>
+
+                <p class="lead">check out the contact tab to get in touch with me :3</p>
+            </section>
+
+            <section id="gallery" class="gallery">
+                <h1>banners!</h1>
+
+                <div class="gallery-subsection">
+                    <h2>friends</h2>
+                    <div class="fav-buttons">
+                        <a href="https://jesx.dev/" target="_blank" title="Jesx"><img src="/img/buttons/jesx.gif"
+                                alt="Jesx button"></a>
+                        <a href="https://ohaa.xyz/" target="_blank" title="Oha"><img src="/img/buttons/oha.png"
+                                alt="Oha button"></a>
+                    </div>
+                </div>
+
+                <div class="gallery-subsection">
+                    <h2>cool shit</h2>
+                    <div class="fav-buttons">
+                        <a href="https://chan.kiwigrape.io/" target="_blank" title="kgChan"><img
+                                src="/img/buttons/kgChan.png" alt="kgChan button"></a>
+                    </div>
+                </div>
+
+                <div class="gallery-subsection">
+                    <h2>random ones i liked (some may lead somewhere)</h2>
+                    <div class="fav-buttons">
+                        <a href="#" title="4ever"><img src="/img/buttons/4ever.gif" alt="4ever button"></a>
+                        <a href="#" title="2001"><img src="/img/buttons/2001.gif" alt="2001 button"></a>
+                        <a href="#" title="Ah"><img src="/img/buttons/ah.gif" alt="Ah button"></a>
+                        <a href="#" title="Blink"><img src="/img/buttons/blink-0.gif" alt="Blink button"></a>
+                        <a href="#" title="Blue Pantsu"><img src="/img/buttons/bluepantsu.gif"
+                                alt="Blue Pantsu button"></a>
+                        <a href="#" title="Tupac HQ"><img src="/img/buttons/button_tupachq1.gif"
+                                alt="Tupac HQ button"></a>
+                        <a href="steam://install/10" title="CS"><img src="/img/buttons/cs.gif" alt="CS button"></a>
+                        <a href="#" title="Cute Socks"><img src="/img/buttons/cutesocks.gif"
+                                alt="Cute Socks button"></a>
+                        <a href="https://debian.org/" target="_blank" title="Debian Powered"><img
+                                src="/img/buttons/debian.gif" alt="Debian Powered button"></a>
+                        <a href="#" title="Devil's Button"><img src="/img/buttons/devils_button.gif"
+                                alt="Devil's Button button"></a>
+                        <a href="#" title="F***ing WWW"><img src="/img/buttons/fckingwww.gif"
+                                alt="F***ing WWW button"></a>
+                        <a href="#" title="FireFox"><img src="/img/buttons/firefox.gif" alt="FireFox button"></a>
+                        <a href="#" title="Funny"><img src="/img/buttons/funny.gif" alt="Funny button"></a>
+                        <a href="#" title="GNU/Linux"><img src="/img/buttons/gnu-linux.gif" alt="GNU/Linux button"></a>
+                        <a href="#" title="GrapheneOS"><img src="/img/buttons/grapheneos.gif"
+                                alt="GrapheneOS button"></a>
+                        <a href="#" title="Grillz"><img src="/img/buttons/grillz.gif" alt="Grillz button"></a>
+                        <a href="#" title="H-Free Anim"><img src="/img/buttons/h-free-anim.gif"
+                                alt="H-Free Anim button"></a>
+                        <a href="#" title="Half-Life"><img src="/img/buttons/half-life.gif" alt="Half-Life button"></a>
+                        <a href="#" title="Jigglypuff"><img src="/img/buttons/jigglypuff.gif"
+                                alt="Jigglypuff button"></a>
+                        <a href="#" title="kgChan"><img src="/img/buttons/kgChan.png" alt="kgChan button"></a>
+                        <a href="#" title="Korn"><img src="/img/buttons/korncom1.gif" alt="Korn button"></a>
+                        <a href="#" title="Kris"><img src="/img/buttons/krisbtn.png" alt="Kris button"></a>
+                        <a href="https://nyaa.si/view/964646" target="_blank" title="Lain"><img
+                                src="/img/buttons/lain.gif" alt="Lain button"></a>
+                        <a href="#" title="Miku"><img src="/img/buttons/miku.gif" alt="Miku button"></a>
+                        <a href="#" title="Nekoweb"><img src="/img/buttons/nekoweb.gif" alt="Nekoweb button"></a>
+                        <a href="#" title="NFT"><img src="/img/buttons/nft.gif" alt="NFT button"></a>
+                        <a href="#" title="Nin"><img src="/img/buttons/nin.gif" alt="Nin button"></a>
+                        <a href="#" title="Phonechump"><img src="/img/buttons/phonechump.gif"
+                                alt="Phonechump button"></a>
+                        <a href="#" title="Piracy is not a crime"><img src="/img/buttons/piracy.png"
+                                alt="Piracy button"></a>
+                        <a href="#" title="Trans Rights"><img src="/img/buttons/transrights.png"
+                                alt="Trans Rights button"></a>
+                        <a href="#" title="Use CDs"><img src="/img/buttons/usecds.png" alt="Use CDs button"></a>
+                        <a href="#" title="Wii"><img src="/img/buttons/wii.gif" alt="Wii button"></a>
+                        <a href="#" title="Made with Windows"><img src="/img/buttons/windows.gif"
+                                alt="Windows button"></a>
+                        <a href="#" title="Xbox"><img src="/img/buttons/xbox.jpg" alt="Xbox button"></a>
+                        <a href="#" title="XP"><img src="/img/buttons/xp.gif" alt="XP button"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h1>where to find me?</h1>
+                <a href="mailto:contact@sen.wtf">e-mail</a>
+                <a href="https://steamcommunity.com/id/lazyfella/" target="_blank">steam</a>
+                <a href="https://github.com/xivSEN" target="_blank">the hub</a>
+                <a href="https://discord.com/users/374589381752913930" target="_blank">discord</a>
+            </section>
+
+            <section id="blog">
+                <h1>bog......</h1>
+                <p>coming soon... (sometime)</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="mono">sen.wtf - no rights reserved ^^"</div>
+        </footer>
+    </div>
+
+    <script>
+        try {
+            const name = localStorage.getItem('siteName') || 'Sen';
+            document.querySelector('.brand .title').textContent = name;
+        } catch (e) { }
+
+        const sections = document.querySelectorAll('main > section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        function showSection(id) {
+            sections.forEach(sec => sec.style.display = sec.id === id ? 'block' : 'none');
+        }
+
+        const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
+        showSection(initialSection);
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = link.getAttribute('href').substring(1);
+                showSection(target);
+                window.history.pushState(null, '', `#${target}`);
+            });
+        });
+
+        const strings = [
+            'i see you but i ignore you',
+            'by any means necessary',
+            'you never understood what i did',
+            'huh. okay. moving on.',
+            'nope',
+            'k.',
+            'THE WORLD HAS RESERVED NOTHING FOR YOU',
+            'YOU\'RE THE CAPTAIN NOW',
+            'wild',
+            'bold of you to assume i am awake',
+            'experiencing technical difficulties between chair and screen',
+            'i cannot hear you over the sound of AAAAAAAAAAAAAAAAAAAA',
+            'certified catboy',
+            'FUCK.',
+            'spilled monster on my keeb',
+            'kanker motorsport',
+            'never let a number be your legacy :keycap_ten:',
+            'living, laughing, losing my shit',
+            'achieving nothing with great success',
+            'having a time',
+            'aggressively doing nothing',
+            'thriving (derogatory)',
+            'losing it (affectionate)',
+            'WELCOME TO YOUR PERSONAL SIMULATION',
+            'assassinated my own sleep schedule',
+            'detonated a VM for fun',
+            'immolated a keyboard with caffeine',
+            'thank you kind stranger!',
+            'sentenced to 10 minutes of twitter!'
+        ];
+
+        window.onload = function () {
+            const element = document.getElementById('subtitle');
+            const index = Math.floor(Math.random() * strings.length);
+            element.innerText = strings[index];
+        };
+    </script>
+</body>
+
+</html>
