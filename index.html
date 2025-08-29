@@ -31,7 +31,7 @@
     <link rel="icon" href="/img/teto.png" type="image/png">
     <link rel="stylesheet" href="/style.css">
     <title>Sen</title>
-
+    
 </head>
 
 <body>
@@ -61,12 +61,14 @@
             </section>
 
             <section id="gallery" class="gallery">
-                <h1>banners!</h1>
+                <h1>buttons!</h1>
 
                 <div class="gallery-subsection">
-                    <h2>my button! feel free to add it to your website</h2>
+                    <h2>click my button to copy it!</h2>
                     <div class="fav-buttons">
-                        <a href="#" title="Sen's button"><img src="/img/buttons/sen.png" alt="Sen's button"></a>
+                        <a href="#" title="Sen's button" onclick="copyButtonCode(event)">
+                            <img src="/img/buttons/sen.png" alt="Sen's button">
+                        </a>
                     </div>
                 </div>
 
@@ -249,6 +251,16 @@
             const index = Math.floor(Math.random() * strings.length);
             element.innerText = strings[index];
         };
+
+        function copyButtonCode(e) {
+            e.preventDefault();
+            const code = '<img src="https://sen.wtf/img/buttons/sen.png" alt="Sen\'s button">';
+            navigator.clipboard.writeText(code).then(() => {
+                console.log("You can now paste my button into your website's HTML!");
+            }).catch(err => {
+                console.error("Could not copy text: ", err);
+            });
+        }
     </script>
 </body>
 
