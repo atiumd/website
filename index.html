@@ -31,7 +31,7 @@
     <link rel="icon" href="/img/teto.png" type="image/png">
     <link rel="stylesheet" href="/style.css">
     <title>Sen</title>
-    
+
 </head>
 
 <body>
@@ -67,7 +67,7 @@
                     <h2>click my button to copy it!</h2>
                     <div class="fav-buttons">
                         <a href="#" title="Sen's button" onclick="copyButtonCode(event)">
-                            <img src="/img/buttons/sen.png" alt="Sen's button">
+                            <img src="https://sen.wtf/img/buttons/sen.png" alt="sen.wtf">
                         </a>
                     </div>
                 </div>
@@ -75,8 +75,8 @@
                 <div class="gallery-subsection">
                     <h2>friends</h2>
                     <div class="fav-buttons">
-                        <a href="https://jesx.dev/" target="_blank" title="Jesx"><img src="/img/buttons/jesx.gif"
-                                alt="Jesx's button"></a>
+                        <a href="https://jesx.dev/" target="_blank" title="Jesx"><img
+                                src='https://jesx.dev/images/buttons/footer/jesx.gif' alt='jesx.dev' /></a>
                         <a href="https://ohaa.xyz/" target="_blank" title="Oha"><img src="/img/buttons/oha.png"
                                 alt="Oha's button"></a>
                     </div>
@@ -93,6 +93,8 @@
                 <div class="gallery-subsection">
                     <h2>random ones i liked (some may lead somewhere)</h2>
                     <div class="fav-buttons">
+                        <a href="#" title="Mod your 3DS, now!"><img src="/img/buttons/3ds.jpg"
+                                alt="Mod your 3DS, now!"></a>
                         <a href="#" title="4ever"><img src="/img/buttons/4ever.gif" alt="4ever button"></a>
                         <a href="#" title="2001"><img src="/img/buttons/2001.gif" alt="2001 button"></a>
                         <a href="#" title="Ah"><img src="/img/buttons/ah.gif" alt="Ah button"></a>
@@ -254,7 +256,7 @@
 
         function copyButtonCode(e) {
             e.preventDefault();
-            const code = '<img src="https://sen.wtf/img/buttons/sen.png" alt="Sen\'s button">';
+            const code = '<img src="https://sen.wtf/img/buttons/sen.png" alt="sen.wtf">';
             navigator.clipboard.writeText(code).then(() => {
                 console.log("You can now paste my button into your website's HTML!");
             }).catch(err => {
