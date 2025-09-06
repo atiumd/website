@@ -1,8 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Sen's personal corner of the web" />
@@ -30,88 +29,123 @@
 
     <link rel="icon" href="/img/teto.png" type="image/png">
     <link rel="stylesheet" href="/style.css">
-    <title>Sen</title>
-
 </head>
 
 <body>
-    <div class="wrap">
+    <div class="container">
         <header>
             <div class="brand">
-                <span class="title">Sen</span>
+                <span class="title">sen.wtf</span>
                 <span class="subtitle" id="subtitle">...</span>
             </div>
             <nav>
-                <a href="#home">home</a>
-                <a href="#gallery">gallery</a>
-                <a href="#contact">contact</a>
-                <a href="#blog">blog</a>
+                <a href="#home" class="nav-link active">home</a>
+                <a href="#blog" class="nav-link">blog</a>
+                <a href="#manifesto" class="nav-link">manifesto</a>
+                <a href="#buttons" class="nav-link">buttons</a>
+                <a href="#contact" class="nav-link">contact</a>
             </nav>
         </header>
 
         <main>
-            <section id="home" class="about">
-                <h1>hello you, me sen!</h1>
-                <p class="lead">i’m a computer-loving cat from the netherlands =^.^=</p>
+            <section id="home" class="section active">
+                <h1>greetings, fellow interwebs traveller!</h1>
+                <p class="lead">i am sen, a 20-year old miqo'te. welcome to my corner of the internet!</p>
 
-                <p>most of my time goes into poking at <strong>maldev</strong>, <strong>cryptography</strong>, my
-                    <strong>linux dotfiles</strong> and
-                    little scripts that make life easier (or at least stranger)</p>
+                <div class="two-col">
+                    <div>
+                        <p>i love spending time on my computer: browsing the web, making art, and connecting with people
+                            from all over the world.</p>
 
-                <p>i have an unhealthy fascination with <strong>virtual machines</strong>, <strong>ELF
-                        binaries</strong>, and
-                    the quirks of <strong>endianness</strong></p>
+                        <p>i enjoy learning new things, playing great games, and diving into awesome media.</p>
 
-                <p>i’m also a shameless <strong>data hoarder</strong>. backups, archives of
-                    things nobody asked me to keep such as images from twitter, music i obtained
-                    <strong>legally</strong> (wink), manga, ebooks, you name it. if it fits on my poor ssd, i want it.
-                    i also collect <strong>ascii art</strong> like some people collect stamps.
-                </p>
+                        <p>some of my favorites include serial experiments lain, dark souls, hollow knight, final
+                            fantasy xiv, linkin park, and so much more!</p>
+                    </div>
 
-                <p>luckily i am not an attachment of my puter, i love to read. my favorite book is
-                    <a href="https://www.amazon.nl/Vals-licht-roman-Joost-Zwagerman/dp/902950627X/" target="_blank">
-                        *Vals Licht* by Joost Zwagerman</a> (PLEASE READ IT)
-                </p>
+                </div>
 
-                <p>somewhere down the road i will write about my favorite music... i promise :3c</p>
-
-                <p>want to reach out? check the contact tab and say hi :3</p>
+                <p>i made this little website as a means to express myself, and show off my <a href="#buttons"
+                        class="nav-link">buttons</a></p>
+                <p>thank you for visiting! <3< /p>
             </section>
 
+            <section id="blog" class="section">
+                <h1>blog</h1>
+                <p>work in progress, please be patient~</p>
+            </section>
 
-            <section id="gallery" class="gallery">
-                <h1>buttons!</h1>
+            <section id="manifesto" class="section">
+                <h1>my internet philosophy</h1>
 
-                <div class="gallery-subsection">
-                    <h2>click my button to copy it!</h2>
-                    <div class="fav-buttons">
-                        <a href="#" title="Sen's button" onclick="copyButtonCode(event)">
-                            <img src="https://sen.wtf/img/buttons/sen.png" alt="sen.wtf">
-                        </a>
+                <div class="manifesto-block">
+                    <h3>take the space</h3>
+                    <p>the internet is yours. wander, explore, make mistakes, and leave traces. don’t get lost in the
+                        noise or swallowed by the algorithms</p>
+                    <p>you’re the one who decides what matters, how you spend your attention, what you create</p>
+                    <p>try things, break things, share things, and see what happens. stay curious, stay moving, stay
+                        alive online</p>
+                    <p>fuck distraction
+                        fuck the algorithm
+                        fuck the dead internet sludge
+                        fuck personal brands pretending to have souls
+                        fuck the coaches, the hustlers, the matrix, the stage play of society
+                        fuck all of it</p>
+                    <p>because at the end
+                        you
+                        can
+                        just
+                        do
+                        things</p>
+                </div>
+
+                <div class="manifesto-block">
+                    <h3>play your own way</h3>
+                    <p>curiosity > productivity</p>
+                    <p>experiment first, explain later</p>
+                    <p>break the rules, follow your own path, see what sticks</p>
+                    <p>your browser is your playground. chaos is part of the fun. explore weird corners, leave traces,
+                        make something yours</p>
+                    <p>you can carve your own corner too. make a personal website. make it messy, make it live, make it
+                        real</p>
+                    <p>attention is optional, creation is mandatory. you can just do things</p>
+                </div>
+
+                <div class="manifesto-block">
+                    <h3>knowledge sharing</h3>
+                    <p>the internet grows when people share. gatekeeping does no one any favors. document your work,
+                        share tools, teach others</p>
+                    <p>the strange and broken corners hold the most interesting secrets. explore them, celebrate them,
+                        make them visible</p>
+                </div>
+            </section>
+
+            <section id="buttons" class="section">
+                <h1>buttons</h1>
+                <p>click mine to copy code</p>
+
+                <div class="button-row">
+                    <h3>mine</h3>
+                    <div class="button-list">
+                        <img src="https://sen.wtf/img/buttons/sen.png" alt="sen.wtf" onclick="copyButtonCode(event)"
+                            title="click to copy">
                     </div>
                 </div>
 
-                <div class="gallery-subsection">
-                    <h2>friends</h2>
-                    <div class="fav-buttons">
-                        <a href="https://jesx.dev/" target="_blank" title="Jesx"><img
-                                src='https://jesx.dev/images/buttons/footer/jesx.gif' alt='jesx.dev' /></a>
-                        <a href="https://ohaa.xyz/" target="_blank" title="Oha"><img src="/img/buttons/oha.png"
-                                alt="Oha's button"></a>
+                <div class="button-row">
+                    <h3>friends</h3>
+                    <div class="button-list">
+                        <img src="https://jesx.dev/images/buttons/footer/jesx.gif" alt="jesx.dev"
+                            onclick="window.open('https://jesx.dev/', '_blank')">
+                        <img src="/img/buttons/oha.png" alt="oha" onclick="window.open('https://ohaa.xyz/', '_blank')">
+                        <img src="/img/buttons/kgChan.png" alt="kgChan"
+                            onclick="window.open('https://chan.kiwigrape.io/', '_blank')">
                     </div>
                 </div>
 
-                <div class="gallery-subsection">
-                    <h2>cool shit</h2>
-                    <div class="fav-buttons">
-                        <a href="https://chan.kiwigrape.io/" target="_blank" title="kgChan"><img
-                                src="/img/buttons/kgChan.png" alt="kgChan button"></a>
-                    </div>
-                </div>
-
-                <div class="gallery-subsection">
-                    <h2>random ones i liked (some may lead somewhere)</h2>
-                    <div class="fav-buttons">
+                <div class="button-row">
+                    <h3>collection</h3>
+                    <div class="button-list">
                         <a href="#" title="Powered by estrogen!"><img src="/img/buttons/pwrdbyestrgn.gif"
                                 alt="Powered by estrogen!"></a>
                         <a href="#" title="Ditch social media"><img src="/img/buttons/ditchsocials.gif"
@@ -172,75 +206,36 @@
                 </div>
             </section>
 
-            <section id="contact">
-                <h1>where to find me?</h1>
-                <p>hit me up if you want to chat about literally anything</p>
+            <section id="contact" class="section">
+                <h1>contact</h1>
+                <p>hit me up about literally anything</p>
 
-                <div class="contact-section">
+                <div class="contact-sections">
                     <div class="contact-group">
-                        <h3>main contact</h3>
+                        <h3>primary</h3>
                         <a href="mailto:contact@sen.wtf">contact@sen.wtf</a>
-                        <a href="https://discord.com/users/374589381752913930" target="_blank">discord (best way to
-                            reach me)</a>
+                        <a href="https://discord.com/users/374589381752913930" target="_blank">discord (fastest)</a>
                     </div>
 
                     <div class="contact-group">
-                        <h3>other places i exist</h3>
+                        <h3>elsewhere</h3>
+                        <a href="https://github.com/xivSEN" target="_blank">github</a>
                         <a href="https://steamcommunity.com/id/lazyfella/" target="_blank">steam</a>
-                        <a href="https://github.com/xivSEN" target="_blank">the hub</a>
                     </div>
                 </div>
 
-                <p style="margin-top: 20px; color: #666;">response time varies depending on how much energy i have and
-                    what timezone my brain thinks it's in</p>
-            </section>
-
-            <section id="blog">
-                <h1>blog</h1>
-                <p>occasional thoughts and yappings because twitter wasn't enough</p>
-
-                <div class="blog-posts">
-                    <article class="blog-entry">
-                        <h2><a href="/blog/first-post">this is my very first blog post</a></h2>
-                        <div class="blog-meta">
-                            <span class="date">28/8/2025 @ 23:33</span>
-                        </div>
-                    </article>
-                </div>
+                <p style="margin-top: 1.5rem; color: #6b7280; font-size: 0.8rem;">i am present in other spaces as well,
+                    but i prefer these platforms</p>
             </section>
         </main>
 
         <footer>
-            <div class="mono">sen.wtf - no rights reserved ^^"</div>
+            <p>sen.wtf - no rights reserved</p>
         </footer>
     </div>
 
     <script>
-        try {
-            const name = localStorage.getItem('siteName') || 'Sen';
-            document.querySelector('.brand .title').textContent = name;
-        } catch (e) { }
-
-        const sections = document.querySelectorAll('main > section');
-        const navLinks = document.querySelectorAll('nav a');
-
-        function showSection(id) {
-            sections.forEach(sec => sec.style.display = sec.id === id ? 'block' : 'none');
-        }
-
-        const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
-        showSection(initialSection);
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                const target = link.getAttribute('href').substring(1);
-                showSection(target);
-                window.history.pushState(null, '', `#${target}`);
-            });
-        });
-
-        const strings = [
+        const subtitles = [
             'i see you but i ignore you',
             'by any means necessary',
             'you never understood what i did',
@@ -272,21 +267,50 @@
             'sentenced to 10 minutes of twitter!'
         ];
 
-        window.onload = function () {
-            const element = document.getElementById('subtitle');
-            const index = Math.floor(Math.random() * strings.length);
-            element.innerText = strings[index];
-        };
+        function updateSubtitle() {
+            const subtitle = document.getElementById('subtitle');
+            const randomIndex = Math.floor(Math.random() * subtitles.length);
+            subtitle.textContent = subtitles[randomIndex];
+        }
+
+        function showSection(targetId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            document.getElementById(targetId).classList.add('active');
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector(`[href="#${targetId}"]`).classList.add('active');
+        }
 
         function copyButtonCode(e) {
             e.preventDefault();
-            const code = '<img src="https://sen.wtf/img/buttons/sen.png" alt="sen.wtf">';
+            const code = '<a href="https://sen.wtf"><img src="https://sen.wtf/img/buttons/sen.png" alt="sen.wtf"></a>';
             navigator.clipboard.writeText(code).then(() => {
-                console.log("You can now paste my button into your website's HTML!");
-            }).catch(err => {
-                console.error("Could not copy text: ", err);
+                const img = e.target;
+                const originalTitle = img.title;
+                img.title = 'copied!';
+                setTimeout(() => {
+                    img.title = originalTitle;
+                }, 1500);
             });
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateSubtitle();
+            setInterval(updateSubtitle, 6000);
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    showSection(targetId);
+                });
+            });
+        });
     </script>
 </body>
 
