@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    user-select: none;
 }
 
 html {
@@ -25,6 +24,16 @@ body {
     line-height: 1.6;
     font-size: 16px;
     font-weight: 400;
+}
+
+::selection {
+    background-color: #2a1f14;
+    color: #faf8f5;
+}
+
+::-webkit-selection {
+    background-color: #2a1f14;
+    color: #faf8f5;
 }
 
 .container {
