@@ -74,3 +74,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+async function updateDiscordStatus() {
+    try {
+        const res = await fetch("https://api.lanyard.rest/v1/users/374589381752913930");
+        const data = await res.json();
+
+        if (!data.success) return;
+
+        const status = data.data.discord_status;
+        const colors = {
+            online: "limegreen",
+            idle: "orange",
+            dnd: "red",
+            offline: "gray"
+        };
+
+        const text = document.getElementById("discord-status-text");
+
+        text.textContent = ` (${status})`;
+        text.style.color = colors[status] || "gray";
+        text.style.fontWeight = "bold";
+    } catch (e) {
+        console.error("Failed to fetch Discord status:", e);
+    }
+}
+
+updateDiscordStatus();
+setInterval(updateDiscordStatus, 30000);
